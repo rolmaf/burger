@@ -8,14 +8,14 @@ function burgerF() {
     x.classList.toggle("change");
 };
 
-// document.querySelectorAll("section").forEach(item => {
-//     let red = Math.ceil(Math.random() * 244);
-//     let green = Math.ceil(Math.random() * 244);
-//     let blue = Math.ceil(Math.random() * 244);
-//     let rgb = `rgb(${red}, ${green}, ${blue}`;
-//     item.style.backgroundColor = `${rgb}`;
-//     console.log(item);
-// })
+document.querySelectorAll("section").forEach(item => {
+    let red = Math.ceil(Math.random() * 244);
+    let green = Math.ceil(Math.random() * 244);
+    let blue = Math.ceil(Math.random() * 244);
+    let rgb = `rgb(${red}, ${green}, ${blue}`;
+    item.style.backgroundColor = `${rgb}`;
+    console.log(item);
+})
 
 $("#menu").on("click", "a", function (event) {
     event.preventDefault();
