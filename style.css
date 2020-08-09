@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.burger-icon {
+    position: relative;
+    right: 2%;
+    top: 4%;
+    cursor: pointer;
+}
+
+.burger-nav {
+    display: block;
+    height: 50px;
+    width: 100vw;
+    background-color: lightgrey;
+}
+
+.header__wrapper {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+#menu {
+    overflow: hidden;
+    background-color: #77777f;
+    opacity: 0;
+    position: absolute;
+    list-style-type: none;
+    padding-left: 0;
+    transition: linear 0.5s;
+}
+
+
+#menu.opened {
+    height: auto;
+    position: relative;
+    opacity: 1;
+    max-height: 500px;
+    transition: linear 0.5s;
+}
+
+#menu li {
+    float: none;
+    text-align: left;
+    text-decoration: none;
+    width: 100vw;
+    margin: 0;
+    font-family: 'Marck Script', cursive;
+    transition: linear 1s;
+    font-style: italic;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 12px;
+    border-bottom: 0.5px solid #fff;
+    display: block;
+    margin: 0;
+    transition: linear 1s;
+}
+
+#bar-container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    /* background-color: #343; */
+    background-color: royalblue;
+    margin: 6px 0;
+    transition: 0.3s linear;
+}
+
+
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 7px);
+    background-color: #FF3300;
+}
+
+.change .bar2 {
+    background-color: red;
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: #FF3300;
+}
+
+
+
+
+section {
+    height: 80vh;
+    padding-top: 80px;
+}
+
+article {
+    width: 100vw;
+    margin: 0 auto;
+}
+
